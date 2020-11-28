@@ -5,6 +5,21 @@ date: "11/28/2020"
 output: html_document
 ---
 
+## CalEnviroScreen 3.0
+## About the data: https://caleja.org/wp-content/uploads/2015/09/CES3.0-5.pdf
+## Live coding with Allison
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(here)
 ```
+
+# Read in the ces3demographics.csv data
+
+```{r}
+ces <- read_csv(here("data", "ces3demographics.csv")) %>% 
+  clean_names()
+```
+
