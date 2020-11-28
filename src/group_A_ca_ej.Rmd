@@ -34,4 +34,6 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   scale_fill_gradient(low = "navy", high = "orange") +
   theme_minimal()
 ```
+In California census tracts, there is a clear trend toward higher pollution burden (by CES3.0 Score) as the percentage of residents identifying as white decreases.
 
+Good job Satie! 
